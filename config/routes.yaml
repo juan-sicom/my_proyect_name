@@ -1,3 +1,24 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+listar_clientes:
+    path: /clientes
+    controller: App\Controller\ClienteController::listarClientes
+
+listar_clientes_servidor:
+    path: /clientes/servidor
+    controller: App\Controller\ClienteController::listarClientesServidor
+
+crear_cliente:
+    path: /cliente/crear
+    controller: App\Controller\ClienteController::crearCliente
+
+ver_cliente:
+    path: /cliente/{id}
+    controller: App\Controller\ClienteController::verCliente 
+
+editar_cliente:
+    path: /cliente/editar/{id}
+    controller: App\Controller\ClienteController::editarCliente 
+
+borrar_cliente:
+    path: /cliente/borrar/{id}
+    controller: App\Controller\ClienteController::borrarCliente 
+

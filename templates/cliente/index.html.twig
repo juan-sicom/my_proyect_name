@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Clientes!{% endblock %}
+
+{% block body %}
+
+{% for cliente in clientes %}
+<h1>Cliente {{ cliente.id }} </h1>
+<p>{{ cliente.nombre }}</p>
+<p>{{ cliente.mail }}</p>
+<p>{{ cliente.telefono }}</p>
+<p>{{ cliente.notas }}</p>
+<p>{{ cliente.servidor }}</p>
+{% endfor %}
+
+
+
+
+{% endblock %}

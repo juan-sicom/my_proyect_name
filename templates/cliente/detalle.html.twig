@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ClienteController!{% endblock %}
+
+{% block body %}
+
+<h1>Cliente: {{ cliente.id }}</h1>
+<p><strong>Nombre:</strong> {{ cliente.nombre }}</p>
+<p><strong>Email:</strong> {{ cliente.mail }}</p>
+<p><strong>Teléfono:</strong> {{ cliente.telefono }}</p>
+<p><strong>Notas:</strong> {{ cliente.notas }}</p>
+<p><strong>Servidor:</strong> {{ cliente.servidor }}</p>
+
+
+
+{% endblock %}
